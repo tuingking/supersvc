@@ -1,0 +1,21 @@
+httpserver:
+  port: ":8080"
+  readtimeout: 5s
+  writetimeout: 5s
+  idletimeout: 5s
+  readheadertimeout : 5s
+
+mysql:
+  localhost:
+    drivername: "msyql"
+    connectionstring: "root:root@tcp(localhost:3306)/foo"
+  
+
+# timeformat default to unix
+# level: trace | debug | info | warn | error | fatal | panic | disabled | ""
+# output: stdout | ""
+logger:
+  timeformat: "unix"
+  level: "info"
+  output: "stdout"
+  showcaller: true
